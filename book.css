@@ -1,0 +1,1002 @@
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.top_bar {
+  height: 500px;
+}
+.navbar-brand img {
+  width: 400px;
+  padding-top: 20px;
+  height: 150px;
+}
+.navbar-container {
+  background: #000000dd;
+  margin-bottom: 4rem;
+}
+#list_items {
+  font-weight: 700;
+  padding-top: 50px;
+  color: #fff;
+}
+.Book_now {
+  margin-top: 100px;
+}
+.Book_now img {
+  padding-top: 20px;
+}
+.Book_now h5 {
+  padding-top: 10px;
+}
+#time_name {
+  margin-top: 80px;
+}
+.BOX {
+  border: 2px solid #000;
+  height: 230px;
+  margin: 20px;
+  border-color: #c59d5f;
+  border-radius: 25px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+.BOX:hover {
+  background-color: #8a6839;
+  animation-name: example;
+  animation-duration: 1s;
+}
+.custom-button {
+  border-color: #8a6839;
+  color: #fff;
+}
+@keyframes example {
+  0% {
+    background-color: #8a6839;
+  }
+  50% {
+    background-color: #a28754;
+  }
+  100% {
+    background-color: #8a6839;
+  }
+}
+#time {
+  padding-top: 10px;
+  font-family: sans-serif;
+}
+.Reservation {
+  height: 1500px;
+  margin-top: 100px;
+  background-image: url(Gallery-img/booknow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 100px;
+}
+#name_menu {
+  font-size: 15px;
+  font-family: sans-serif;
+  margin-left: 20px;
+}
+.name_navebar {
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.name_navebar button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 15px;
+  width: 150px;
+  height: 60px;
+  border: 2px solid #8a6839;
+  background-color: #f5bc69;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  font-family: s;
+}
+.name_navebar button:hover {
+  background-color: #ddd;
+}
+.name_navebar button:active {
+  background-color: #555;
+  color: #fff;
+}
+@media screen and (max-width: 600px) {
+  .name_navebar button {
+    font-size: 14px;
+    width: 120px;
+  }
+}
+.form-group {
+  font-family: sans-serif;
+}
+.form-group input {
+  background-color: transparent;
+  border-color: #8a6839;
+}
+#nextBTN {
+  width: 100px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: transparent;
+  border-color: #8a6839;
+  border-radius: 10px;
+  color: #8a6839;
+}
+.Menu_Section {
+  width: 100%;
+  margin-top: 50px;
+  border-color: none;
+  background-color: #8a6839;
+  border-radius: 10px;
+  border: 2px solid #8a6839;
+
+}
+.menu-item {
+  margin-bottom: 2px;
+  display: inline-block;
+  width: 100%;
+}
+.counter {
+  margin-top: 10px;
+  color: #fff;
+}
+.total-container {
+  display: flex;
+  margin-bottom: 10px;
+}
+.total-container h6 {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+}
+.Items_select {
+  border-radius: 10px;
+  background-color: #8a6839;
+  padding: 0;
+}
+.Items_select a {
+  margin: 0;
+}
+.Items_select span,
+p {
+  font-size: 14px;
+}
+.swiper {
+  width: 100%;
+  height: 1100px;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+}
+.swiper-pagination-bullet {
+  background-color: blue !important;
+  height: 20px;
+  width: 20px;
+}
+.Banqt h6 {
+  margin-top: 100px;
+  font-size: 25px;
+}
+
+.Value_services h6 {
+  font-size: 25px;
+}
+.form-check {
+  font-size: 15px;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 5px;
+}
+#Shift {
+  margin-top: 2px;
+  color: #fff;
+}
+.complementry_arrangement {
+  width: 100%;
+  background-color: rgba(162, 135, 84, 0.5);
+}
+#list_number {
+  font-size: 12px;
+}
+.spcial_arrangement {
+  margin-top: 20px;
+  width: 100%;
+  background-color: rgba(162, 135, 84, 0.5);
+}
+input:-ms-input-placeholder {
+  font-weight: 700;
+}
+#arangemnet {
+  font-size: 14px;
+  font-family: sans-serif;
+  color: #fff;
+}
+.Flawer_arrangements {
+  margin-top: 20px;
+  background-color: rgba(162, 135, 84, 0.5);
+  width: 300px;
+}
+#Venu {
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+}
+#totalContainer {
+  font-family: "Courgette", cursive;
+  font-size: 18px;
+}
+#text_vanu {
+  font-family: "Open Sans", sans-serif;
+}
+.Header_content {
+  background-image: url(Gallery-img/book.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.Header_content h1 {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.image-container {
+  text-align: center;
+}
+.Contact_section {
+  margin-top: 100px;
+}
+.Contact_section a {
+  font-weight: 100;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  font-family: sans-serif;
+}
+.form-group {
+  margin: 10px;
+}
+#exampleFormControlTextarea1 {
+  height: 250px;
+}
+#imageContainer img {
+  object-fit: cover;
+}
+#links_footer_1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+.text_paragraph {
+  max-width: 400px;
+  font-family: "Open Sans", sans-serif;
+}
+.icons h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.icons h5 {
+  font-size: 15px;
+  color: #fff;
+}
+.closed_img {
+  position: relative;
+  opacity: 0;
+  padding: 0;
+  margin-top: 0;
+  border: none;
+  height: 30px;
+}
+.footer_video_section {
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeBackground_1 10s infinite;
+  margin-top: 50px;
+}
+@keyframes changeBackground_1 {
+  0% {
+    background-image: url(amap.jpg);
+  }
+  25% {
+    background-image: url(poster.png);
+  }
+  50% {
+    background-image: url(footerimg.jpg);
+  }
+  75% {
+    background-image: url(amap.jpg);
+  }
+  100% {
+    background-image: url(poster.png);
+  }
+}
+.footer_video_section {
+  padding: 200px;
+}
+.footer_video_section p {
+  max-width: 500px;
+  color: #d5d8dc;
+  font-family: sans-serif;
+}
+.content_mg img {
+  width: 100%;
+}
+.layer:hover .closed_img {
+  opacity: 1 !important;
+}
+#form_newslatter{
+  border-color: #8a6839!important;
+}
+.Address {
+  margin-top: 100px;
+  height: 200px;
+  background-color: #101010;
+    width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#contact_icons {
+  padding-left: 40px;
+  margin-top: 20px;
+  color: #fff;
+}
+#TOTALBIL label {
+  padding-top: 30px;
+  font-size: 15px;
+}
+.Address a {
+  background-color: #000;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+  border-color: #7a7a7a;
+  border: 2px solid #deb887;
+  color: #fff;
+}
+.Address a:hover {
+  border-color: #fff;
+  background-color: #000;
+  color: #fff;
+}
+.fom_group {
+  margin-top: 50px;
+  padding-top: 90px;
+  height: 300px;
+  background-color: #f5bc69;
+  border-radius: 10px;
+  border: 2px solid #8a6839;
+}
+#Payment_details h3 {
+  margin-top: 50px;
+}
+#TOTALBIL {
+  border: 2px solid #deb887;
+  background-color: #c59d5f;
+  height: 400px;
+  width: 500px;
+  border-radius: 15px;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+#TOTALBIL input {
+  height: 40px;
+  width: 350px;
+  background-color: transparent;
+  border-color: #8a6839;
+}
+#submit_btn {
+  width: 100px;
+  color: #fff;
+  border-color: #8a6839;
+  font-family: sans-serif;
+}
+#next_previous {
+  width: 100px;
+  margin: 10px;
+}
+#spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  animation: spin 2s linear infinite;
+}
+.btn {
+  width: 200px;
+  height: 50px;
+}
+#spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#text_hide {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 600px;
+}
+.content h1 {
+  padding-top: 90px;
+}
+.Luxurious_Experience {
+  margin-top: 0;
+  height: 200px;
+  background: #262626;
+}
+.Luxurious_Experience h2 {
+  padding-top: 50px;
+}
+.Luxurious_Experience button {
+  margin-top: 30px;
+}
+.Footer h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.Footer {
+  height: 400px;
+}
+.Footer i {
+  padding-top: 15px;
+}
+.btn_icons {
+  width: 40px;
+  height: 40px;
+  padding: 13px 15px;
+  border-radius: 100%;
+  background-color: #708090;
+  color: #fff;
+}
+.logo_last_section {
+  background-color: #101010;
+}
+.logo_last_section img {
+  padding-top: 50px;
+  width: 100px;
+}
+#links_footer {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+#name_section {
+  font-size: 20px;
+  color: #8a6839;
+}
+.footer_components {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+    padding-top: 0;
+    height: 100%;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 50px;
+    color: #000;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #000;
+  }
+  #name_section {
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 200px;
+    padding-top: 0;
+    height: 45px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 50px;
+    color: #000;
+  }
+  .Header_content {
+    height: 100%;
+  }
+  .fom_group {
+    margin-top: 50px;
+    padding-top: 50px!important;
+    height: 300px;
+    background-color: #f5bc69;
+    border-radius: 25px;
+}
+  .content_section {
+    margin-top: 0;
+  }
+  .Content_img h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #262626;
+    padding-top: 100px;
+  }
+  .Content_img p {
+    font-size: 12px;
+    color: #262626;
+    word-spacing: 5px;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 50px;
+    color: #000;
+  }
+  .testimotionals {
+    max-width: 350px;
+    margin: 15px auto;
+    display: block;
+  }
+  .content_mg img {
+    width: 100%;
+  }
+  .Footer {
+    height: 100%;
+  }
+  .logo_last_section {
+    height: 100%;
+    background: #101010;
+  }
+  .form_contact {
+    height: 100%;
+  }
+  .selectors {
+    color: #000;
+    padding-top: 20px;
+  }
+  .content_section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  .footer_components {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .fom_group {
+    border: 2px solid #8a6839;
+  }
+  .Footer {
+    height: 100%;
+  }
+  textarea {
+    font-size: 10px;
+  }
+  .Book_now {
+    height: 100%;
+  }
+  .Items_select span,
+  p {
+    font-size: 12px;
+  }
+  .Items_select span {
+    font-size: 12px;
+  }
+  #TOTALBIL input {
+    height: 40px;
+    max-width: 200px;
+    background-color: transparent;
+    border-color: #8a6839;
+    margin: auto;
+    border-radius: 10px;
+  }
+  #Payment_details h3 {
+    margin-top: 100px;
+  }
+  #name_section {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-brand img {
+    max-width: 400px;
+    padding-top: 30px;
+    height: 100%;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 40px;
+    color: #fff;
+    font-size: 18px;
+    word-spacing: 10px;
+    font-weight: 200;
+  }
+  .Header_content {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar-brand img {
+    max-width: 60px;
+    padding-top: 0;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 200;
+  }
+  .content_mg img {
+    width: 100%;
+  }
+  .SEND_MESSAGE h1 {
+    font-size: 20px;
+  }
+  .content h1 {
+    padding-top: 140px;
+    font-size: 20px;
+  }
+  .content_section h1 {
+    font-size: 20px;
+  }
+  .content_section p {
+    font-size: 15px;
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .video_section h2 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .OUR_RANGE_BANQUETS h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .text_p {
+    font-size: 10px;
+  }
+  .paragraph {
+    max-width: 300px;
+    font-size: 11px;
+    font-weight: 50;
+    font-family: "Open Sans", sans-serif;
+  }
+  .Footer_slides h1 {
+    font-size: 20px;
+  }
+  .Footer_slides p {
+    font-size: 10px;
+  }
+  .Luxurious_Experience h2 {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  .Footer h3 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .Luxurious_Experience,
+  .text_BUtn {
+    font-size: 10px;
+  }
+  .Footer i {
+    padding-top: 15px;
+  }
+  #links_footer {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  .logo_last_section {
+    height: 100%;
+    background: #101010;
+  }
+  .swiper {
+    width: 100%;
+    height: 50%;
+  }
+  .form_contact {
+    height: 100%;
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+  .footer_components {
+    height: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .top_bar {
+    height: 500px;
+  }
+  .footer_video_section {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeBackground_1 10s infinite;
+    margin-top: 50px;
+  }
+  .footer_video_section h1 {
+    font-size: 20px;
+  }
+  .footer_video_section {
+    padding: 50px;
+  }
+  .footer_video_section p {
+    max-width: 500px;
+    color: #d5d8dc;
+    font-family: sans-serif;
+  }
+  .fom_group {
+    margin-top: 50px; 
+     padding-top: 90px; 
+    height: 300px;
+    background-color: #f5bc69;
+    border-radius: 25px;
+}
+  .logo_last_section img {
+    max-width: 100px;
+  }
+  .Footer {
+    height: 100%;
+  }
+  .Gallery_media_section h1 {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 73px;
+    letter-spacing: 0;
+    color: #8a6839;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 73px;
+    letter-spacing: 0;
+    color: #8a6839;
+  }
+  #form_input {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  #form_text {
+    font-size: 10px;
+  }
+  #exampleFormControlTextarea1 {
+    height: 250px;
+    font-size: 10px;
+  }
+  .Address {
+    margin-top: 100px;
+    height: 100%;
+    background-color: #101010;
+  }
+  #Venu {
+    font-family: "Courgette", cursive;
+    font-size: 15px;
+  }
+  .Book_now {
+    height: 100%;
+  }
+  .Reservation {
+    height: 100%;
+    background-image: url(Gallery-img/booknow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .Menu_Section {
+    border: 2px solid #000;
+    width: 100%;
+    border-color: #8a6839;
+    background-color: rgba(162, 135, 84, 0.5);
+  }
+  .swiper {
+    width: 100%;
+    height: 1150px;
+  }
+  .Items_select {
+    padding: 0;
+    border: 5px solid #8a6839;
+  }
+  .Value_services{
+    width: 100%;
+  }
+  .Value_services h6 {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  .Banqt h6 {
+    font-size: 25px;
+  }
+  #TOTALBIL {
+    border: 2px solid #deb887;
+    background-color: #c59d5f;
+    height: 400px;
+    width: 500px;
+    border-radius: 15px;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 16px;
+  }
+  #TOTALBIL input {
+    height: 40px;
+    max-width: 200px;
+    background-color: transparent;
+    border-color: #8a6839;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .btn {
+    height: 50px;
+    color: black;
+  }
+  label {
+    display: inline-block;
+    font-size: 9px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .navbar-brand img {
+    max-width: 60px;
+    padding-top: 0;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  #list_items {
+    font-weight: 700;
+    font-weight: 200;
+  }
+  .content_mg img {
+    width: 100%;
+  }
+  .Value_services{
+    width: 100%;
+  }
+  .Menu_Section {
+    width: 100%;
+    margin-top: 50px;
+    border-color: none;
+    background-color: #8a6839;
+    border-radius: 10px;
+    border: 2px solid #8a6839;
+  
+  }
+  .fom_group {
+    margin-top: 50px;
+    padding-top: 40px;
+    height: 300px;
+    background-color: #f5bc69;
+    border-radius: 10px;
+    border: 2px solid #8a6839;
+  }
+  .Banqt h6 {
+    margin-top: 25px;
+    font-size: 25px;
+}
+  .content h1 {
+    padding-top: 120px;
+    font-size: 18px;
+  }
+  .text_p {
+    font-size: 10px;
+  }
+  .paragraph {
+    width: 400px;
+    font-size: 13px;
+    font-weight: 50;
+  }
+  .Footer_slides h1 {
+    font-size: 20px;
+  }
+  .Footer_slides p {
+    font-size: 10px;
+  }
+  .Luxurious_Experience h2 {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  .Footer h3 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .Luxurious_Experience,
+  .text_BUtn {
+    font-size: 10px;
+  }
+  .Footer i {
+    padding-top: 15px;
+  }
+  #links_footer {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  .Footer {
+    height: 100%;
+  }
+  .Items_select span,
+  p {
+    font-size: 10px;
+  }
+  .Reservation {
+    height: 100%;
+    background-image: url(Gallery-img/booknow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+#nextSection {
+  display: none;
+  margin-top: 100px;
+}
+#nextSection button {
+  width: 100px;
+  color: #fff;
+  border-color: #8a6839;
+  margin: 5px;
+}
+#Rates_1 {
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serifF;
+  margin-top: 20px;
+}
+#Rates_2 {
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serifF;
+  margin-top: 15px;
+}
+#Rates_3 {
+  color: #fff;
+  font-size: 15px;
+  font-family: sans-serifF;
+  margin-top: 30px;
+}
+#shift_section {
+  /* height: 200px; */
+  padding: 22px 10px;
+  background-color: #d5d8dc;
+  border-radius: 10px;
+  color: #000;
+}
+#Shift {
+  color: #8a6839;
+  font-size: 26px;
+}
+#shift_section,
+label {
+  color: #8a6839;
+}
+.list-group-item-warning {
+  color: #664d03;
+  background-color: #ffffff66 !important;
+}
+

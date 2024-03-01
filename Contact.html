@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Favicon -->
+      <link rel="icon" type="image/x-icon" href="Gallery-img/fav-icon.png">
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+     <!-- <script src='https://kit.fontawesome.com/a076d05399.js' defer crossorigin='anonymous'></script> -->
+     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="./bootstrap.min.css">
+     <link rel="stylesheet" href="contact.css">
+     <link rel="stylesheet" href="./navbar.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> -->
+     <script src="./bootstrap.min.js" defer></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>King Gold | Venue</title>
+    <link rel="stylesheet" href="./navbar.css">
+
+</head>
+
+<body>
+    <!-- Spinner overlay with rotating spinner -->
+    <div id="spinner-overlay">
+        <div id="spinner"></div>
+    </div>
+    <div class="Header_content">
+        <div class="navbar-container">
+            <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light h-30">
+                    <a class="navbar-brand" href="#">
+                        <img id="imglogo" src="Gallery-img/footer_logo.png" class="img-fluid"></img>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html" id="list_items">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html" id="list_items">ABOUT<span style="padding:2px;">US</span></a>
+                            </li>
+                            <!-- <li class="nav-item"> -->
+                                <!-- <a class="nav-link" href="Facilities.html" id="list_items">FACILITIES</a> -->
+                            <!-- </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="Gallery.html" id="list_items">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html" id="list_items">CONTACT<span style="padding:2px;">US</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Book.html" id="list_items" style="color: #f5bc69;">BOOK<span style="padding:2px;">NOW</span></a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                </div>
+        </div>
+        <div class="container-fluid top_bar">
+            <!-- Navbar -->
+            <div class="Contact_section text-center">
+                <div class="d-flex justify-content-center">
+                <h1 class="text-white">CONTACT US</h1></div>
+                <p class="text-white" id="Venu">Get in Touch</p>
+                <div class="d-flex justify-content-center">
+                    <a href="index.html">HOME /</a><a href="#">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+</div>    
+
+    <!---### start contact us ###-->
+    <div class="SEND_MESSAGE">
+        <div class="container-fluid">
+            <h1 class="text-center" style="color: #8a6839;">SEND MESSAGE</h1>
+            <div class="d-flex justify-content-center" style="margin: 5px;">
+                <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+                <p id="Venu" class=" text-center" style=" margin-left: 4px;"> Keep in Touch</p><span
+                    style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                    class="mt-3"> </span>
+            </div>
+
+            <form target="_blank" action="https://formsubmit.co/info@kinggoldbanquet.com" method="POST"
+            onsubmit="return validateForm()">
+            <!-- Form Group -->
+            <div class="alert alert-warning animated newsalert2 visible" data-animation="fadeInUp" style="display: none;">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Alert!</strong> Name &amp; contact # fields are mandatory.
+            </div>
+            <div class="form-group">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                            <!-- Element -->
+                            <div class="element">
+                                <input type="text" name="name" class="form-control cname text" placeholder="NAME *"
+                                    style="font-family: sans-serif;" id="form_input">
+                            </div>
+                            <!-- End Element -->
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                            <!-- Element -->
+                            <div class="element">
+                                <input type="text" name="email" class="form-control cemail text" placeholder="E-MAIL"
+                                    style="font-family: sans-serif;" id="form_input">
+                            </div>
+                            <!-- End Element -->
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-sx-12">
+                            <!-- Element -->
+                            <div class="element">
+                                <input type="text" name="contact" class="form-control ccontact text"
+                                    placeholder="CONTACT NO. *" style="font-family: sans-serif;" id="form_input">
+                            </div>
+                            <!-- End Element -->
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label"></label>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="DESCRIPTION*" style="font-family: sans-serif;"></textarea>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-warning btn-lg" id="submitButton">SEND</button>
+                </div>
+            </div>
+        </form>
+    <!--### ends ###-->
+    <br>
+    <br>
+    <!--Google map-->
+    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 300px">
+        <!-- <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.7473901853466!2d67.03368061519358!3d24.860086884052214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33ed7bbf60f8d%3A0x70af57d1d070fe6d!2s33%20Zulfiqar%20Street%201%2C%20DHA%20Phase%20VIII%2C%20Karachi%2C%20Sindh%2075500!5e0!3m2!1sen!2s!4v1642745773722!5m2!1sen!2s"
+            frameborder="0" style="border:0" allowfullscreen></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1809.2051335076055!2d67.02972615804445!3d24.918089898702647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f94be90cda1%3A0x3020769f39cbe81c!2sKings%20Gold%20Banquet!5e0!3m2!1sen!2s!4v1705716750165!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!--Google Maps-->
+    <div class="Address">
+        <div class="container-fluid">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="d-flex mt-3">
+                            <a class="btn  btn-lg btn-floating" href="#!" role="button"><i class="fa fa-phone"></i>
+                            </a>
+                            <h3 class="text-center" id="contact_icons">PHONE</h3>
+                        </div>
+                        <p class="text-center text-white">Telephone: 0310-2822282</p>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div class="d-flex mt-3">
+                            <a class="btn  btn-lg btn-floating" href="#!" role="button"><i class="fa fa-envelope"></i>
+                            </a>
+                            <h3 class="text-center" id="contact_icons">E-MAIL</h3>
+                        </div>
+                        <p class="text-center text-white">kinggoldbanquet@gmail.com</p>
+                    </div>
+                    <div class="col-lg-4  ">
+                        <div class="d-flex mt-3">
+                            <a class="btn  btn-lg btn-floating" href="#!" role="button"><i class="fa fa-road"></i></a>
+                            <h3 class="text-center" id="contact_icons">ADDRESS</h3>
+                        </div>
+                        <p class="text-center text-white">7 Number, Bus Stop, Sharah-e-Sher Shah Suri,<br/> Block 3 Nazimabad, Karachi, Karachi City, Sindh 74600
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color:#191919;">
+        <div class="container">
+            <div class="Footer">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white">QUICK LINKS</h3>
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/About.html" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> About Us</a><br>
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/Gallery.html" class="text-white"
+                            style="text-decoration: none;" id="links_footer">
+                            Gallery</a><br>
+
+                        <!-- <i class='fa fa-caret-right' style="color: white;"></i><a href="#" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> Privacy
+                            Policy</a><br> -->
+
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/Contact.html" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> Contact Us</a><br>
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/Book.html" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> Book Now</a><br>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white">CONNECT WITH US</h3>
+                        <h6 class="text-white mt-4" id="links_footer_1">Venue Address:</h6>
+                        <p class="text-white" id="links_footer">Address: 7 Number, Bus Stop, Sharah-e-Sher Shah Suri, Block 3 Nazimabad, Karachi, Karachi City, Sindh 74600</p>
+                        <h6 class="text-white" id="links_footer_1">Call for Reservations:</h6>
+                        <p class="text-white" id="links_footer">0310-2822282</p>
+                        <h6 class="text-white" id="links_footer_1">E-mail:</h6>
+                        <p class="text-white" id="links_footer">kinggoldbanquet@gmail.com</p>
+                        <br>
+                        <a class="btn_icons" href="https://www.facebook.com/KINGGOLDBANQUETS" role=""><i class="fa fa-facebook-square"></i></a>
+                        <a class="btn_icons" href="https://www.youtube.com/channel/UCJs7wlK8st_bSt_5bXTPRsw" role=""><i class="fa fa-youtube"></i></a>
+                        <a class="btn_icons" href="https://www.instagram.com/kinggoldbanquet" role=""><i class="fa fa-instagram"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-white"> Book Now</h3>
+                        <form class="mt-4" target="_blank" action="https://formsubmit.co/info@kinggoldbanquet.com" method="POST" id="myForm">
+                            <input type="text" name="name" class="form-control" placeholder="ENTER YOUR FULL NAME">
+                            <br>
+                            <input type="number" id="numberInput" name="number" class="form-control" placeholder="ENTER YOUR CONTACT NUMBER #" style="background-color:white;"> <br>
+                            <input type="text" name="email" class="form-control" placeholder="ENTER YOUR EMAIL">
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-outline-warning btn-lg btn-block w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="logo_last_section text-center">
+        <div class="container-fluid">
+            <div class="d-flex justify-content-center">
+                <img src="Gallery-img/footer_logo.png" alt="" class="img-fluid">
+            </div>
+            <br>
+            <a href="" class="text-center text-white" style="text-decoration: none;font-size: 10px;" id="links_footer">©
+                2024
+                KING GOLD
+                - ALL RIGHT RESERVED.</a> <br>
+            
+
+        </div>
+    </div>
+    <!-- Swiper JS -->
+
+    <!-- Rest of your website content -->
+    <script>
+        window.onload = function () {
+            var spinnerOverlay = document.getElementById('spinner-overlay');
+            spinnerOverlay.style.display = 'none'; // Hide the spinner overlay once the entire site has loaded
+        };
+    </script>
+ <script>
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        var name = document.forms["myForm"]["name"].value;
+        var number = document.forms["myForm"]["number"].value;
+        var email = document.forms["myForm"]["email"].value;
+
+        if (name === "" || number === "" || email === "") {
+            alert("Please fill in all the fields before submitting.");
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
+    <script>
+        document.getElementById('submitButton').addEventListener('click', function () {
+            // Get form data
+            var name = document.getElementsByName('name')[0].value;
+            var email = document.getElementsByName('email')[0].value;
+            var contact = document.getElementsByName('contact')[0].value;
+            var message = document.getElementsByName('message')[0].value;
+
+            // Check if all fields are filled
+            if (name !== '' && email !== '' && contact !== '' && message !== '') {
+                // Submit the form
+                document.querySelector('.form').submit();
+
+                // Reset the form
+                document.querySelector('.form').reset();
+            } else {
+                alert('All fields are mandatory. Please fill the form before submitting.');
+            }
+        });
+    </script>
+    <script>
+        function validateForm() {
+            var name = document.forms[0]["name"].value;
+            var contact = document.forms[0]["contact"].value;
+
+            if (name === "" || contact === "") {
+                // Show the alert
+                document.querySelector('.alert').style.display = 'block';
+                return false; // Prevent form submission
+            }
+
+            // Hide the alert if all required fields are filled
+            document.querySelector('.alert').style.display = 'none';
+            return true; // Allow form submission
+        }
+    </script>
+</body>
+
+</html>

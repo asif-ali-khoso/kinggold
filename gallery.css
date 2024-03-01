@@ -1,0 +1,582 @@
+body {
+  font-family: "Fjalla One", sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.top_bar {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-40px);
+}
+.navbar-brand img {
+  width: 400px;
+  padding-top: 20px;
+  height: 150px;
+}
+#list_items {
+  font-weight: 700;
+  padding-top: 50px;
+  color: #fff;
+}
+#Venu {
+  font-family: "Courgette", cursive;
+  font-size: 20px;
+}
+#text_vanu {
+  font-family: "Open Sans", sans-serif;
+}
+.Header_content {
+  background-image: url(Gallery-img/Galleryheader.png);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeBackground 10s infinite;
+}
+.Gallery_section {
+  padding: 20px;
+  background: #000000aa;
+  border-radius: 16px;
+  max-width: 500px;
+}
+.Gallery_section a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #fff;
+  font-family: sans-serif;
+}
+.Gallery_media_section {
+  margin-top: 50px;
+}
+.Gallery_media_section h1 {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 73px;
+  letter-spacing: 0;
+  color: #8a6839;
+}
+.btn-git {
+  border-color: #ffc107 !important;
+  color: #000 !important;
+  height: 30px;
+}
+.btn-git:hover {
+  color: #000;
+  background: #ffc107 !important;
+}
+.Gallery_media_section button {
+  width: 150.19px;
+  height: 60px;
+  top: 1060px;
+  left: 290px;
+  border-radius: 8px;
+  color: #8a6839;
+  border-color: #8a6839;
+}
+.Gallery_media_section button.active-btn {
+  color: #fff !important;
+}
+.Gallery_media_section button:hover {
+  color: #fff;
+  background-color: #8a6839;
+}
+.btn-check:focus + .btn-outline-warning,
+.btn-outline-warning:focus {
+  box-shadow: none;
+}
+#btn-all {
+  color: #fff;
+}
+.image-container {
+  text-align: center;
+}
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+#imageContainer img {
+  object-fit: cover;
+}
+#links_footer_1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #7a7a7a;
+}
+.text_paragraph {
+  max-width: 400px;
+  font-family: "Open Sans", sans-serif;
+}
+.icons h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.icons h5 {
+  font-size: 15px;
+  color: #fff;
+}
+.closed_img {
+  position: relative;
+  opacity: 0;
+  padding: 0;
+  margin-top: 0;
+  border: none;
+  height: 30px;
+}
+.footer_video_section {
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: changeBackground_1 10s infinite;
+  margin-top: 50px;
+}
+@keyframes changeBackground_1 {
+  0% {
+    background-image: url(Gallery-img/css-img-animation-2.jpg);
+  }
+  25% {
+    background-image: url(Gallery-img/css-img-animation-3.jpg);
+  }
+  50% {
+    background-image: url(Gallery-img/css-img-animation-4.jpg);
+  }
+  75% {
+    background-image: url(Gallery-img/css-img-animation-5.jpg);
+  }
+  100% {
+    background-image: url(Gallery-img/css-img-animation-6.jpg);
+  }
+}
+.footer_video_section {
+  padding: 200px;
+}
+.footer_video_section p {
+  max-width: 500px;
+  color: #d5d8dc;
+  font-family: sans-serif;
+}
+.content_mg img {
+  width: 100%;
+}
+.layer:hover .closed_img {
+  opacity: 1 !important;
+}
+#spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9998;
+  animation: spin 2s linear infinite;
+}
+#spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+#text_hide {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 600px;
+}
+.content h1 {
+  padding-top: 90px;
+}
+.Luxurious_Experience {
+  margin-top: 0;
+  height: 200px;
+  background: #262626;
+}
+.Luxurious_Experience h2 {
+  padding-top: 50px;
+}
+.Luxurious_Experience button {
+  margin-top: 30px;
+}
+.Footer h3 {
+  margin-top: 30px;
+  font-size: 20px;
+}
+.Footer {
+  height: 400px;
+}
+.Footer i {
+  padding-top: 15px;
+}
+.btn_icons {
+  width: 40px;
+  height: 40px;
+  padding: 13px 15px;
+  border-radius: 100%;
+  background-color: #708090;
+  color: #fff;
+}
+.logo_last_section {
+  background-color: #101010;
+}
+.logo_last_section img {
+  padding-top: 50px;
+  width: 100px;
+}
+#links_footer {
+  font-size: 13px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+.footer_components {
+  height: 600px;
+  background-image: url(Gallery-img/bg_11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+    padding-top: 0;
+    height: 100%;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 50px;
+    color: #000;
+    font-weight: bold;
+    padding-top: 50px;
+    color: #000;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 200px;
+    padding-top: 0;
+    height: 45px;
+    margin: 0 auto;
+    padding-left: 100px;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 50px;
+    color: #000;
+  }
+  .Header_content {
+    height: 100%;
+  }
+  .content_section {
+    margin-top: 0;
+  }
+  .Content_img h1 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #262626;
+    padding-top: 100px;
+  }
+  .Content_img p {
+    font-size: 12px;
+    color: #262626;
+    word-spacing: 5px;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 50px;
+    color: #000;
+  }
+  .testimotionals {
+    max-width: 350px;
+    margin: 15px auto;
+    display: block;
+  }
+  .content_mg img {
+    width: 100%;
+  }
+  .Footer {
+    height: 100%;
+  }
+  .logo_last_section {
+    height: 100%;
+    background: #101010;
+  }
+  .form_contact {
+    height: 100%;
+  }
+  .selectors {
+    color: #000;
+    padding-top: 20px;
+  }
+  .content_section {
+    background-image: url("Gallery-img/image\ 2.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+  .footer_components {
+    height: 450px;
+    background-image: url(Gallery-img/bg_11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .Footer {
+    height: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .navbar-brand img {
+    max-width: 400px;
+    padding-top: 30px;
+    height: 100%;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 40px;
+    color: #fff;
+    font-size: 18px;
+    word-spacing: 0;
+    font-weight: 200;
+  }
+  .Header_content {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar-brand img {
+    max-width: 60px;
+    padding-top: 0;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  #list_items {
+    font-weight: 700;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-weight: 200;
+  }
+  .content_mg img {
+    width: 100%;
+  }
+  .content h1 {
+    padding-top: 140px;
+    font-size: 20px;
+  }
+  .content_section h1 {
+    font-size: 20px;
+  }
+  .content_section p {
+    font-size: 15px;
+    padding-top: 30px;
+    font-family: "Open Sans", sans-serif;
+  }
+  .video_section h2 {
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .OUR_RANGE_BANQUETS h2 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .text_p {
+    font-size: 10px;
+  }
+  .paragraph {
+    max-width: 300px;
+    font-size: 11px;
+    font-weight: 50;
+    font-family: "Open Sans", sans-serif;
+  }
+  .Footer_slides h1 {
+    font-size: 20px;
+  }
+  .Footer_slides p {
+    font-size: 10px;
+  }
+  .Luxurious_Experience h2 {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  .Footer h3 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .Luxurious_Experience,
+  .text_BUtn {
+    font-size: 10px;
+  }
+  .Footer i {
+    padding-top: 15px;
+  }
+  #links_footer {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  .logo_last_section {
+    height: 100%;
+    background: #101010;
+  }
+  .swiper {
+    width: 100%;
+    height: 50%;
+  }
+  .form_contact {
+    height: 100%;
+    background-color: darkgrey;
+    border-radius: 10px;
+  }
+  .footer_components {
+    height: 450px;
+    background-image: url(Gallery-img/bg_11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+  }
+  .top_bar {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_video_section {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: changeBackground_1 10s infinite;
+    margin-top: 50px;
+  }
+  .footer_video_section h1 {
+    font-size: 20px;
+  }
+  .footer_video_section {
+    padding: 50px;
+  }
+  .footer_video_section p {
+    max-width: 500px;
+    color: #d5d8dc;
+    font-family: sans-serif;
+  }
+  .logo_last_section img {
+    max-width: 100px;
+  }
+  .Footer {
+    height: 100%;
+  }
+  .Gallery_media_section h1 {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 73px;
+    letter-spacing: 0;
+    color: #8a6839;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 73px;
+    letter-spacing: 0;
+    color: #8a6839;
+  }
+  #Venu {
+    font-family: "Courgette", cursive;
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  .navbar-brand img {
+    max-width: 60px;
+    padding-top: 0;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  #list_items {
+    font-weight: 700;
+    font-weight: 200;
+  }
+  .content_mg img {
+    width: 100%;
+  }
+  .content h1 {
+    padding-top: 120px;
+    font-size: 18px;
+  }
+  .text_p {
+    font-size: 10px;
+  }
+  .paragraph {
+    width: 400px;
+    font-size: 13px;
+    font-weight: 50;
+  }
+  .Footer_slides h1 {
+    font-size: 20px;
+  }
+  .Footer_slides p {
+    font-size: 10px;
+  }
+  .Luxurious_Experience h2 {
+    padding-top: 50px;
+    font-size: 15px;
+  }
+  .Footer h3 {
+    margin-top: 30px;
+    font-size: 15px;
+  }
+  .Luxurious_Experience,
+  .text_BUtn {
+    font-size: 10px;
+  }
+  .Footer i {
+    padding-top: 15px;
+  }
+  #links_footer {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+  }
+  .Footer {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .testimotionals .card {
+    position: relative;
+    overflow: hidden;
+    max-width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  }
+}
+.active-btn {
+  background-color: #8a6839;
+  color: #fff;
+}
+.box_img {
+  border: 3px solid #000;
+  margin: 5px;
+  border-color: #fff;
+}
+.pagination {
+  margin-top: 50px;
+}
+.fancybox-bg {
+  background: rgba(0, 0, 0, 0.8);
+}
+.image-container img {
+  margin-top: 20px;
+}

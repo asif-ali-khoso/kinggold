@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="Gallery-img/fav-icon.png">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' defer crossorigin='anonymous'></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet"> -->
+    <script src="./bootstrap.min.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>KING GOLD | Venue</title>
+</head>
+
+<body>
+    <div class="Header_content">
+        <div class="navbar-container">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light h-30">
+                    <a class="navbar-brand" href="#">
+                        <img id="imglogo" src="Gallery-img/footer_logo.png" class="img-fluid"></img>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html" id="list_items">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="About.html" id="list_items">ABOUT<span
+                                        style="padding:2px;">US</span></a>
+                            </li>
+                            <!-- <li class="nav-item"> -->
+                            <!-- <a class="nav-link" href="Facilities.html" id="list_items">FACILITIES</a> -->
+                            <!-- </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="Gallery.html" id="list_items">GALLERY</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Contact.html" id="list_items">CONTACT<span
+                                        style="padding:2px;">US</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="Book.html" id="list_items" style="color: #f5bc69;">BOOK<span
+                                        style="padding:2px;"></span>NOW</a>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="container-fluid top_bar">
+            <!-- Navbar -->
+            <!--### content ###-->
+            <div class="content">
+                <div class="container">
+                    <div class="d-flex justify-content-center">
+                        <h1 class="quotes text-center">A Taste of Unprecedented Royalty</h1>
+                        <h1 class="quotes text-center">Pakistan's First Luxury Destination for Hosting Events
+                        </h1>
+                        <h1 class="quotes text-center">Feel the true Luxury of grandness</h1>
+                    </div>
+                    <div class="Book_events">
+                    </div>
+                    <form class="form_contact" id="eventForm" onsubmit="submitEventForm(event)">
+                        <h3 class="text-center" style="color:chocolate;">BOOK YOUR EVENT</h3>
+                        <div class="fom">
+                            <div class="row justify-content-center text-center">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="select_section  selectors">Event Type</div>
+                                    <select class="form-select" aria-label="Default select example" id="section"
+                                        name="eventType"
+                                        style="background-color: transparent; border-color:palegoldenrod;border-color:#8A6839;">
+                                        <option value="0" selected>SELECT EVENT TYPE</option>
+                                        <option value="1">WEDDING</option>
+                                        <option value="2">MENEDHI</option>
+                                        <option value="3">RECEPTION</option>
+                                        <option value="3">CORPORATE EVENT</option>
+                                        <option value="3">EXHIBITION</option>
+                                        <option value="3">BIRTHDAY PARTY</option>
+                                        <option value="3">OTHERS</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="select_section selectors">No of Guests</div>
+                                    <div class="form-group row">
+                                        <label for="numberInput"
+                                            class="col-form-label col-md-2 col-12 text-white"></label>
+                                        <div class="col-md-10 col-12">
+                                            <input type="number" id="numberInput" name="guestCount" class="form-control"
+                                                placeholder="0"
+                                                style="height: 40px; border-radius: 10px;background-color: transparent;"
+                                                oninput="updateGuestCount()">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="select_section selectors" id="dateLabel">Event Date</div>
+                                    <input id="date" type="date" name="eventDate" class="form-control"
+                                        style="height: 40px; border-radius: 10px; background-color: transparent;" />
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center py-4 submit_btn">
+                                <button type="submit" class="btn btn-outline-warning btn-lg btn-block btn-submit"
+                                    id="submitButton">SUMBIT</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--### ends ###-->
+    <div class="content_section">
+        <div class="container-fluid">
+            <h1 class="text-center">WHY KING GOLD</h1>
+            <div class="d-flex justify-content-center">
+                <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+                <p id="Venu" class="text-center" style="margin-left: 4px;">
+                    KING GOLD is by far one of the biggest venues for hosting events
+
+                </p><span style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                    class="mt-3"> </span>
+            </div>
+            <div class="text-center mx-auto text_paragraph">Your big day deserves to be celebrated in true grandeur at a
+                venue that speaks to you. The serene seafront view, lavishing green lawn, and the sight of palm trees in
+                the heart of the city are all you need to make your celebrations stand out. KING GOLD is
+                crafted in a way that meets your checklist of the perfect venue. Given a choice of five spacious
+                banquets, each with a unique style, you don't have to worry about matching your aesthetics because we
+                have something for everyone.</div>
+            <br>
+            <div class="section_img">
+                <div class="container">
+                    <div class="row">
+                        <video controls autoplay muted class="rounded-md" height="100%" width="100%"
+                            src="Gallery-img/Videos.mp4" type="Videos.mp4" class="img-fluid img">
+                            <source src="Gallery-img/Videos.mp4" type="Videos.mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br><br>
+        </div>
+    </div>
+    </div>
+    <br><br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="col-lg-4 col-md-12 col-sm-12 video_section_img">
+        <div class="video_section">
+            <h2 class="text-center text-white">A MAJESTIC CHARM THAT<br> PERVADES EVERY BANQUET!
+            </h2>
+            <div class="d-flex justify-content-center">
+                <p class="text-center text-white" id="text_hide">At KING GOLD, we offer you
+                    the
+                    perfect settings to host your event in tranquil surroundings. Enjoy the finest
+                    moments as you celebrate the joys in your life in the company of your loved
+                    ones.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!--### OUR RANGE OF BANQUETS ###-->
+    <div class="OUR_RANGE_BANQUETS">
+        <h2 class="text-center">OUR RANGE OF BANQUETS</h2>
+        <div class="d-flex justify-content-center text_p">
+            <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+            <p id="Venu" class="text-center" style="margin-left: 4px;">
+                Select the Royal Choice You Deserve
+            </p><span style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                class="mt-3"> </span>
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <p class="text-center  paragraph">KING GOLD is the only venue in Karachi that
+                offers
+                you a wide
+                choice of five large banquets along with a substantial Open Area. And with its unique blend
+                of
+                sophisticated charm and tradition, each banquet ought to provide an exceptional experience
+                to
+                your
+                guests. So step into the colossal foyer and feel mesmerized with a delicate choice of décor.
+            </p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Section 1 -->
+                <div class="col-lg-4 col-md-6 justify-content-center">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/Barat..png" alt="" class="img-fluid" style="height:300px;">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25 ">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>BARAT</h3>
+                                        <!-- <h5>THE MAJESTIC APPEAL OF ROYALTY<br />Capacity: 500 - 700 PERSON</h5> -->
+                                        <a type="button" href="/Gallery.html" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 justify-content-center">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/valima.png" alt="" class="img-fluid" style="height:300px;">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25 ">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>VALIMA</h3>
+                                        <!-- <h5>THE MAJESTIC APPEAL OF ROYALTY<br />Capacity: 500 - 700 PERSON</h5> -->
+                                        <a type="button" href="/Gallery.html" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 2 -->
+                <div class="col-lg-4 col-md-6 justify-content-center">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/Reception.png" alt="" class="img-fluid" style="height: 300px;">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>OTHERS</h3>
+                                        <!-- <h5>BLENDING ELEGANCE WITH STYLE<br />Capacity: 500 - 700 PERSON -->
+                                        <!-- </h5> -->
+
+                                        <a href="/Gallery.html" type="button" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 3 -->
+                <div class="col-lg-4 col-md-6 justify-content-center">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/mendhi.png" alt="" class="img-fluid" style="height: 300px;">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>MEHANDI</h3>
+                                        <!-- <h5>ENJOY THE INSPIRING BEAUTY<br />Capacity: 500 - 700 PERSON</h5> -->
+                                        <!-- <br>-->
+
+                                        <a href="/Gallery.html" type="button" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 4 -->
+                <div class="col-lg-4 col-md-6 justify-content-center">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/birthday-party.png" alt="" class="img-fluid"
+                                style="height: 300px;">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>BIRTHDAY</h3>
+                                        <!-- <h5>REJOICE IN THE BEST CHOICE<br /> Capacity: 300 - 350 PERSON</h5> -->
+                                        <!-- <br> -->
+
+                                        <a href="/Gallery.html" type="button" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 5 -->
+                <div class="col-lg-4 col-md-6 justify-content-center">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/Corporate-event.png" alt="" class="img-fluid"
+                                style="height: 250px;">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>CORPORATE EVENT</h3>
+                                        <!-- <h5>MAJESTY OF GRANDNESS<br />Capacity: 1000 - 1200 PERSON</h5> -->
+                                        <!-- <br> -->
+
+                                        <a href="/Gallery.html" type="button" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Section 6 -->
+                <div class="col-lg-4 col-md-6 justify-content-center" style="display: none;">
+                    <div class="testimotionals">
+                        <div class="card">
+                            <img src="Gallery-img/Home/6-.webp" alt="" class="img-fluid">
+                            <div class="layer">
+                                <div class="icons">
+                                    <div class="d-flex justify-content-end position-absolute w-100 top-0">
+                                        <button class="closed_img btn-dark w-25">X</button>
+                                    </div>
+                                    <div class="event-heading">
+                                        <h3>OTHERS</h3>
+                                        <!-- <h5>THE GRANDEUR OF HOSTING UNDER OPEN SKIES<br />Capacity: 1,600 PERSON -->
+                                        <!-- </h5> -->
+                                        <!-- <br> -->
+
+                                        <a type="button" href="/Gallery.html" class="btn btn-outline-warning w-25"><i
+                                                class="fa fa-eye"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--## ends ###-->
+        </div>
+
+        <div class="Galeary">
+            <div class="container-fluid">
+                <h2 class="text-center">GALLERY</h2>
+                <div class="d-flex justify-content-center">
+                    <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+                    <p id="Venu" class="text-center" style=" margin-left: 4px;">
+                        A picturesque glimpse of some of the happenings taking place at our
+                        Banquets!
+                    </p><span style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                        class="mt-3"> </span>
+                </div>
+                <div class="container-fluid">
+                    <br>
+                    <br>
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="Gallery-img/Home/home_gallery-1.jpg" alt="" class="img-fluid"
+                                        style="border-radius: 10%;max-width: 100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="Gallery-img/Home/pic-4  (2).png" alt="" class="img-fluid"
+                                        style="border-radius: 10%; max-width: 100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="Gallery-img/Home/pic-4  (3).png" alt="" class="img-fluid"
+                                        style="border-radius: 10%; max-width: 100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="Gallery-img/Home/pic-4  (4).png" alt="" class="img-fluid"
+                                        style="border-radius: 10%; max-width: 100%;">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box">
+                                    <img src="Gallery-img/Home/pic-4  (1).png" alt="" class="img-fluid"
+                                        style="border-radius: 10%; max-width: 100%;">
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br><br>
+                        <div class="myNewSwiperPagination"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--### OUR BLOGS ### -->
+        <!---### ends ###-->
+        <!---### start video blogs ###-->
+        <!-- <div class="OUR_video">
+            <div class="container">
+                <h1 class="text-center">OUR VIDEOS</h1>
+                <div class="d-flex justify-content-center">
+                    <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+                    <p id="Venu" class="text-center" style=" margin-left: 4px;">
+                        Here Are Some Events That We Organised For You In The
+                        Form Of
+                        Video
+                    </p><span style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                        class="mt-3"> </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="menu_card">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/udPMsqCoBUY"
+                                    allowfullscreen></iframe>
+                                <div class="card-Video">
+                                    <h3>SHAHEEN SHAH AFRIDI WEDDING</h3>
+                                    <p class="card-text mt-4 ">Watch the enchanting tale of Ansha Afridi and Shaheen
+                                        Afridi's grand wedding unfold at KING GOLD.....</p>
+                                    <i class="fa fa-clock-o"></i> September 25th, 2023
+                                    <i class="fa fa-pencil-square-o"></i> Valima
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wD4LHWBIs9g"
+                                    allowfullscreen></iframe>
+                                <div class="card-Video">
+                                    <h3>THE LOCATE KARACHI</h3>
+                                    <p class="card-text mt-5">Get ready to witness the most enjoyable summer party
+                                        at
+                                        our
+                                        lavish venue as people from different corners of the City.........</p>
+                                    <i class="fa fa-clock-o"></i> September 14th, 2023
+                                    <i class="fa fa-pencil-square-o"></i> Corporate Event
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tK1jhHJXFks"
+                                    allowfullscreen></iframe>
+                                <div class="card-Video">
+                                    <h3>LOREAL'S NEW PRODUCT LAUNCH EVENT</h3>
+                                    <p class="card-text">Corporate sophistication meets opulence at Andalusian
+                                        Banquets.
+                                        I loved the elegant purple vibes at L'oreal's product launch.......</p>
+                                    <i class="fa fa-clock-o"></i> September 14th, 2023
+                                    <i class="fa fa-pencil-square-o"></i>Corporate Event
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-outline-warning">VIEW MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <br>
+    <!-- <div class="Footer_slides" style="display: none;">
+        <div class="footer_components">
+            <div class="container-fluid">
+                <h1 class="text-white text-center">OUR CORPORATE CLIENTS</h1>
+                <div class="d-flex justify-content-center">
+                    <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+                    <p id="Venu" class="text-white" style="margin-left: 4px; color: white;">
+                        PARTNERING WITH THE BEST IN BUSINESS
+                    </p><span style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                        class="mt-3"> </span>
+                </div>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper mt-5">
+                    <div class="swiper-slide">
+                        <img src="footer_slider1.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider2.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider3.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider4.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider5.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider6.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider7.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider8.webp" alt="" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="footer_slider9.webp" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <br><br>
+                <br>
+                <br><br>
+                <br>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div> -->
+    <!--### ends ###-->
+    <div class="Luxurious_Experience">
+        <div class="container-fluid">
+            <h2 class="text-center text-white">Truly a Luxurious Experience!</h2>
+            <div class="d-flex justify-content-center text_BUtn">
+                <button type="button" class="btn btn-outline-warning">PLAN YOUR EVENT</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="blogs_card position-relative">
+        <div class="container-fluid">
+            <h1 class="text-center">OUR BLOGS</h1>
+            <div class="d-flex justify-content-center">
+
+                <span style="border: 1px solid rgb(158, 154, 154); height:1px; width: 50px;" class="mt-3"></span>
+                <p class="text-center" id="Venu">Here Is Your Go-To Source For Information On Organizing A
+                    Memorable Wedding Or Business Event.
+
+                </p><span style="border: 1px solid rgb(145, 142, 142); height:1px; width: 50px; margin-left: 4px;"
+                    class="mt-3"> </span>
+            </div> -->
+    <!-- Swiper -->
+    <!-- Swiper with updated class name for pagination -->
+    <!-- <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <div class="swiper mySwiperUpdated">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="Gallery-img/Home/4-.webp" alt="" class="img-fluid" style="border-radius: 10%;">
+                                <p class="mt-3" style="font-size: 14px;">Blast weekend of November 2023 savored the
+                                    nights
+                                    of The Locate Karachi that
+                                    happened at A...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Gallery-img/Home/5-.webp" alt="" class="img-fluid" style="border-radius: 10%;">
+                                <p class="mt-3" style="font-size: 14px;">Blast weekend of November 2023 savored the
+                                    nights
+                                    of The Locate Karachi that
+                                    happened at A...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Gallery-img/Home/6-.webp" alt="" class="img-fluid" style="border-radius: 10%;">
+                                <p class="mt-3" style="font-size: 14px;">Blast weekend of November 2023 savored the
+                                    nights
+                                    of The Locate Karachi that
+                                    happened at A...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Gallery-img/Home/6-.webp" alt="" class="img-fluid" style="border-radius: 10%;">
+                                <p class="mt-3" style="font-size: 14px;">Blast weekend of November 2023 savored the
+                                    nights
+                                    of The Locate Karachi that
+                                    happened at A...</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="Gallery-img/Home/6-.webp" alt="" class="img-fluid" style="border-radius: 10%;">
+                                <p class="mt-3" style="font-size: 14px;">Blast weekend of November 2023 savored the
+                                    nights
+                                    of The Locate Karachi that
+                                    happened at A...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="swiper-pagination mySwiperPaginationUpdated"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div> -->
+
+    <div class="container-fluid" style="background-color:#191919;">
+        <div class="container">
+            <div class="Footer">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white">QUICK LINKS</h3>
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/About.html" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> About Us</a><br>
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/Gallery.html"
+                            class="text-white" style="text-decoration: none;" id="links_footer">
+                            Gallery</a><br>
+
+                        <!-- <i class='fa fa-caret-right' style="color: white;"></i><a href="#" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> Privacy
+                            Policy</a><br> -->
+
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/Contact.html"
+                            class="text-white" style="text-decoration: none;" id="links_footer"> Contact Us</a><br>
+                        <i class='fa fa-caret-right' style="color: white;"></i><a href="/Book.html" class="text-white"
+                            style="text-decoration: none;" id="links_footer"> Book Now</a><br>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <h3 class="text-white">CONNECT WITH US</h3>
+                        <h6 class="text-white mt-4" id="links_footer_1">Venue Address:</h6>
+                        <p class="text-white" id="links_footer">Address: 7 Number, Bus Stop, Sharah-e-Sher Shah Suri,
+                            Block 3 Nazimabad, Karachi, Karachi City, Sindh 74600</p>
+                        <h6 class="text-white" id="links_footer_1">Call for Reservations:</h6>
+                        <p class="text-white" id="links_footer">0310-2822282</p>
+                        <h6 class="text-white" id="links_footer_1">E-mail:</h6>
+                        <p class="text-white" id="links_footer">kinggoldbanquet@gmail.com</p>
+                        <br>
+                        <a class="btn_icons" href="https://www.facebook.com/KINGGOLDBANQUETS" role=""><i
+                                class="fa fa-facebook-square"></i></a>
+                        <a class="btn_icons" href="https://www.youtube.com/channel/UCJs7wlK8st_bSt_5bXTPRsw" role=""><i
+                                class="fa fa-youtube"></i></a>
+                        <a class="btn_icons" href="https://www.instagram.com/kinggoldbanquet" role=""><i
+                                class="fa fa-instagram"></i></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <h3 class="text-white"> Book Now</h3>
+                        <form class="mt-4" target="_blank" action="https://formsubmit.co/info@kinggoldbanquet.com"
+                            method="POST" id="myForm">
+                            <input type="text" name="name" class="form-control" placeholder="ENTER YOUR FULL NAME">
+                            <br>
+                            <input type="number" id="numberInput" name="number" class="form-control"
+                                placeholder="ENTER YOUR CONTACT NUMBER #" style="background-color:white;"> <br>
+                            <input type="text" name="email" class="form-control" placeholder="ENTER YOUR EMAIL">
+                            <br>
+                            <br>
+                            <button type="submit" class="btn btn-outline-warning btn-lg btn-block w-100">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo_last_section text-center">
+        <div class="container-fluid">
+
+            <div class="d-flex justify-content-center">
+                <img src="Gallery-img/footer_logo.png" alt="" class="img-fluid">
+            </div>
+            <br>
+            <a href="" class="text-center text-white" style="text-decoration: none; font-size: 10px;"
+                id="links_footer">©
+                2024
+                KING GOLD
+                - ALL RIGHT RESERVED.</a> <br>
+
+
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <!-- <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script> -->
+    <script defer>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            var name = document.forms["myForm"]["name"].value;
+            var number = document.forms["myForm"]["number"].value;
+            var email = document.forms["myForm"]["email"].value;
+            if (name === "" || number === "" || email === "") {
+                alert("Please fill in all the fields before submitting.");
+                event.preventDefault(); // Prevent form submission
+            }
+        });
+    </script>
+    <script defer>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            pagination: {
+                el: ".myNewSwiperPagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500, // Adjust delay as needed
+            },
+        });
+    </script>
+    <!-- Initialize Swiper -->
+    <script defer>
+        var swiperUpdated = new Swiper(".mySwiperUpdated", {
+            slidesPerView: 'auto',
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+                el: ".mySwiperPaginationUpdated",
+                clickable: true,
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+            // autoplay: {
+            //     delay: 2500,
+            // },
+        });
+    </script>
+    <script defer>
+        (function () {
+            var quotes = document.querySelectorAll(".quotes");
+            var quoteIndex = 0;
+            function showNextQuote() {
+                quotes[quoteIndex % quotes.length].style.opacity = 1;
+                setTimeout(function () {
+                    quotes[quoteIndex % quotes.length].style.opacity = 0;
+                    quoteIndex++;
+                }, 3000); // Change quote every 3 seconds
+            }
+            showNextQuote();
+            setInterval(showNextQuote, 4000); // Start the interval to switch quotes every 4 seconds
+        })();
+    </script>
+    <!-- Rest of your website content -->
+    <script>
+        // window.onload = function () {
+        //     var spinnerOverlay = document.getElementById('spinner-overlay');
+        //      spinnerOverlay.style.display = 'none'; // Hide the spinner overlay once the entire site has loaded
+        //  };
+
+        function submitEventForm(event) {
+            // Prevent the default form submission behavior
+            event.preventDefault();
+
+            // Extract values from the form
+            var eventType = document.getElementById('section').value;
+            var guestCount = document.getElementById('numberInput').value;
+            var eventDate = document.getElementById('date').value;
+
+            // Perform any additional validation if needed
+
+            // Call a function with the extracted values
+            handleFormSubmission(eventType, guestCount, eventDate);
+        }
+
+        function handleFormSubmission(eventType, guestCount, eventDate) {
+            var url = "Book.html?type=" + encodeURIComponent(eventType) +
+                "&guests=" + encodeURIComponent(guestCount) +
+                "&date=" + encodeURIComponent(eventDate);
+            console.log(eventType, guestCount, eventDate);
+
+            // Navigate to the new page
+            window.location.href = url;
+        }
+    </script>
+</body>
+
+</html>

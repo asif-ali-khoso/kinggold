@@ -1,0 +1,31 @@
+.navbar-container {
+    background: #000000dd;
+    margin-bottom: 4rem;
+}
+#list_items {
+    padding-top: 0px;
+}
+.navbar-brand img {
+    padding-top: 0px;
+}
+.navbar-container .navbar-nav{
+    padding-top: 8px !important;
+    gap: 2rem !important;
+}
+#list_items {
+    padding: 0px !important;
+}
+.navbar-light .navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+    opacity: 2;
+}
+@media screen and (max-width: 991px) {
+    .navbar-container .navbar-nav { 
+        gap: 10px !important;
+        margin: 1rem;
+    }
+    #list_items {
+        color: white;
+        font-size: 1rem;
+    }
+}
